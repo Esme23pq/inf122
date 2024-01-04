@@ -1,2 +1,2 @@
-#Jessica Esmeralda Poma Quispe
-###INF-122
+Jessica Esmeralda Poma Quispe
+INF-122
