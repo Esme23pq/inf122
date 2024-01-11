@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nunito:wght@300;400;500;700&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <title>figma</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --purple: #6F2CFF;
+            --light-purple: #EFE9F9;
+            --red-heart: ##A50954;
+            --blue-heart: #ACD9B2;
+            --sm: 14px;
+            --md: 20px;
+            --lg: 60px;
+        }
+
+        body {
+            font-family: 'Nunito';
+            margin: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: var(--white);
+        }
+
+        .brochure {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 100%;
+            justify-items: center;
+            background-color: var(--white);
+        }
+
+        .more-info {
+            display: grid;
+            background-color: var(--light-purple);
+            width: 100%;
+        }
+
+        .title {
+            color: var(--black);
+            text-align: center;
+            font-size: var(--lg);
+        }
+
+        .subtitle {
+            color: var(--black);
+            text-align: center;
+            font-size: var(--md);
+            margin: 5px 0 5px 0;
+        }
+
+        .primary-button {
+            background-color: var(--purple);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: var(--md);
+            cursor: pointer;
+            margin: 100px 0 100px 0;    
+        }
+
+        .icons-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 50px 260px 50px 260px;
+            justify-content: center;
+        }
+
+        .card-container {
+            display: flex;
+            align-items: center;
+            margin: 16px 0 16px 0;
+        }
+
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 28px;
+        }
+
+        .card-icon figure img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .icon-text h2 {
+            font-size: var(--sm);
+            margin: 0;
+        }
+
+        .icon-text p {
+            font-size: var(--sm);
+            margin: 0;
+        }
+
+        @media (max-width: 720px) {
+            .icons-container {
+                grid-template-columns: repeat(1, 1fr);
+                margin: 50px 10px 50px 10px;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="brochure">
+            <h1 class="title">Situational Awareness in the Workplace</h1>
+            <p class="subtitle">Free product design illustrations for startups and designers.</p>
+            <p class="icon-descrpiton"> High-quality digital assets that have been tested and reviewed by a team of </p>
+            <button class="primary-button" value="">
+                <span>Download Brochure</span>
+            </button>
+        </div>
+        <div class="more-info">
+            <section class="icons-container">
+                <div class="card-container">
+                    <div class="card-icon">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="50" viewBox="0 0 44 50" fill="none">
+                                <path d="M7.529 39.5H43.75V5.66668C43.75 3.00109 41.5823 0.833344 38.9167 0.833344H7.5C4.5855 0.833344 0.25 2.76426 0.25 8.08334V41.9167C0.25 47.2358 4.5855 49.1667 7.5 49.1667H43.75V44.3333H7.529C6.4125 44.3043 5.08333 43.8645 5.08333 41.9167C5.08333 41.6726 5.10508 41.4551 5.14133 41.2569C5.412 39.8649 6.55267 39.5242 7.529 39.5ZM13.8993 14.4682C14.9052 13.4751 16.2619 12.9182 17.6754 12.9182C19.0889 12.9182 20.4455 13.4751 21.4514 14.4682L21.9928 14.9974L22.5317 14.4682C23.538 13.4749 24.895 12.918 26.3089 12.918C27.7228 12.918 29.0799 13.4749 30.0862 14.4682C30.5853 14.9482 30.9824 15.5241 31.2537 16.1614C31.5249 16.7986 31.6648 17.484 31.6648 18.1766C31.6648 18.8691 31.5249 19.5545 31.2537 20.1917C30.9824 20.829 30.5853 21.4049 30.0862 21.8849L21.9952 29.8333L13.9018 21.8849C13.4021 21.4052 13.0046 20.8295 12.7329 20.1923C12.4612 19.5552 12.3211 18.8697 12.3209 18.1771C12.3207 17.4844 12.4603 16.7989 12.7316 16.1615C13.0028 15.5242 13.4 14.9482 13.8993 14.4682Z" fill="#A50954"/>
+                              </svg>
+                        </figure>
+                    </div>
+
+                    <div class="icon-text">
+                        <h2 class="icon-title">Research Materials</h2>
+                        <p class="icon-text">Guide your decisions with our wealth of research.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-icon">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="50" viewBox="0 0 44 50" fill="none">
+                                <path d="M7.529 39.5H43.75V5.66668C43.75 3.00109 41.5823 0.833344 38.9167 0.833344H7.5C4.5855 0.833344 0.25 2.76426 0.25 8.08334V41.9167C0.25 47.2358 4.5855 49.1667 7.5 49.1667H43.75V44.3333H7.529C6.4125 44.3043 5.08333 43.8645 5.08333 41.9167C5.08333 41.6726 5.10508 41.4551 5.14133 41.2569C5.412 39.8649 6.55267 39.5242 7.529 39.5ZM13.8993 14.4682C14.9052 13.4751 16.2619 12.9182 17.6754 12.9182C19.0889 12.9182 20.4455 13.4751 21.4514 14.4682L21.9928 14.9974L22.5317 14.4682C23.538 13.4749 24.895 12.918 26.3089 12.918C27.7228 12.918 29.0799 13.4749 30.0862 14.4682C30.5853 14.9482 30.9824 15.5241 31.2537 16.1614C31.5249 16.7986 31.6648 17.484 31.6648 18.1766C31.6648 18.8691 31.5249 19.5545 31.2537 20.1917C30.9824 20.829 30.5853 21.4049 30.0862 21.8849L21.9952 29.8333L13.9018 21.8849C13.4021 21.4052 13.0046 20.8295 12.7329 20.1923C12.4612 19.5552 12.3211 18.8697 12.3209 18.1771C12.3207 17.4844 12.4603 16.7989 12.7316 16.1615C13.0028 15.5242 13.4 14.9482 13.8993 14.4682Z" fill="#A50954"/>
+                              </svg>
+                        </figure>
+                    </div>
+
+                    <div class="icon-text">
+                        <h2 class="icon-title">Research Materials</h2>
+                        <p class="icon-text">Guide your decisions with our wealth of research.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-icon">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="50" viewBox="0 0 44 50" fill="none">
+                                <path d="M7.529 39.5H43.75V5.66668C43.75 3.00109 41.5823 0.833344 38.9167 0.833344H7.5C4.5855 0.833344 0.25 2.76426 0.25 8.08334V41.9167C0.25 47.2358 4.5855 49.1667 7.5 49.1667H43.75V44.3333H7.529C6.4125 44.3043 5.08333 43.8645 5.08333 41.9167C5.08333 41.6726 5.10508 41.4551 5.14133 41.2569C5.412 39.8649 6.55267 39.5242 7.529 39.5ZM13.8993 14.4682C14.9052 13.4751 16.2619 12.9182 17.6754 12.9182C19.0889 12.9182 20.4455 13.4751 21.4514 14.4682L21.9928 14.9974L22.5317 14.4682C23.538 13.4749 24.895 12.918 26.3089 12.918C27.7228 12.918 29.0799 13.4749 30.0862 14.4682C30.5853 14.9482 30.9824 15.5241 31.2537 16.1614C31.5249 16.7986 31.6648 17.484 31.6648 18.1766C31.6648 18.8691 31.5249 19.5545 31.2537 20.1917C30.9824 20.829 30.5853 21.4049 30.0862 21.8849L21.9952 29.8333L13.9018 21.8849C13.4021 21.4052 13.0046 20.8295 12.7329 20.1923C12.4612 19.5552 12.3211 18.8697 12.3209 18.1771C12.3207 17.4844 12.4603 16.7989 12.7316 16.1615C13.0028 15.5242 13.4 14.9482 13.8993 14.4682Z" fill="#A50954"/>
+                              </svg>
+                        </figure>
+                    </div>
+
+                    <div class="icon-text">
+                        <h2 class="icon-title">Research Materials</h2>
+                        <p class="icon-text">Guide your decisions with our wealth of research.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-icon">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="50" viewBox="0 0 44 50" fill="none">
+                                <path d="M7.529 39.5H43.75V5.66668C43.75 3.00109 41.5823 0.833344 38.9167 0.833344H7.5C4.5855 0.833344 0.25 2.76426 0.25 8.08334V41.9167C0.25 47.2358 4.5855 49.1667 7.5 49.1667H43.75V44.3333H7.529C6.4125 44.3043 5.08333 43.8645 5.08333 41.9167C5.08333 41.6726 5.10508 41.4551 5.14133 41.2569C5.412 39.8649 6.55267 39.5242 7.529 39.5ZM13.8993 14.4682C14.9052 13.4751 16.2619 12.9182 17.6754 12.9182C19.0889 12.9182 20.4455 13.4751 21.4514 14.4682L21.9928 14.9974L22.5317 14.4682C23.538 13.4749 24.895 12.918 26.3089 12.918C27.7228 12.918 29.0799 13.4749 30.0862 14.4682C30.5853 14.9482 30.9824 15.5241 31.2537 16.1614C31.5249 16.7986 31.6648 17.484 31.6648 18.1766C31.6648 18.8691 31.5249 19.5545 31.2537 20.1917C30.9824 20.829 30.5853 21.4049 30.0862 21.8849L21.9952 29.8333L13.9018 21.8849C13.4021 21.4052 13.0046 20.8295 12.7329 20.1923C12.4612 19.5552 12.3211 18.8697 12.3209 18.1771C12.3207 17.4844 12.4603 16.7989 12.7316 16.1615C13.0028 15.5242 13.4 14.9482 13.8993 14.4682Z" fill="#A50954"/>
+                              </svg>
+                        </figure>
+                    </div>
+
+                    <div class="icon-text">
+                        <h2 class="icon-title">Research Materials</h2>
+                        <p class="icon-text">Guide your decisions with our wealth of research.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
