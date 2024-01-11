@@ -1,0 +1,38 @@
+body{
+    background-color: #a7a7a7;
+}
+h1{
+    font-size: 30px;
+    color: #7c0b80;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    color: #9324af;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img{
+    max-width: 25%;
+    max-height: 25%;
+}
+ol li {
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: bold;
+}
+ul li {
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+}
+.etiqueta{
+    background-color: #e95ab2;
+}
+.enviar{
+    background-color: #8fc220;
+    border-radius: 10px;
+}
